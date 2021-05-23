@@ -1,11 +1,8 @@
+import nsepy
+from datetime import date
 
 
-names = []
+data = nsepy.get_history(symbol='SBIN',start=date(2021,5,1), end=date(2021,5,20),series='')
 
-n = int(input('[#] Enter no of names : '))
-
-for i in range(n):
-    name = str(input(f'[#] Enter name no {i} : '))
-    names.append(name)
-
-print(names)
+nsepy.get_expiry_date
+print(data)
