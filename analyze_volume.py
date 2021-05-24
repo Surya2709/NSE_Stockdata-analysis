@@ -2,13 +2,14 @@ from fetcher import *
 import nsetools
 
 
-class Analyzer():
-    
+
+
+class Analyzer(object):
+
     def  __init__(self,csv_data=None,symbol=None) -> None:
 
         self.csv_data =  csv_data
         self.symbol  = symbol
-        
 
     def listen_for_alerts(self):
         pass
@@ -24,6 +25,5 @@ class Analyzer():
         pass
         
 
-
-
-
+tata_power = YahooFinance('TATAPOWER.NS', result_range='1d', interval='15m', dropna='True').result
+print(tata_power['Volume'].mean())

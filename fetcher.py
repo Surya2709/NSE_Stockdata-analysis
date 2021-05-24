@@ -16,6 +16,7 @@ class YahooFinance:
         :param interval:Valid Intervals - Valid intervals: [1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo]
         :return:
         """
+
         if result_range is None:
             start = int(_time.mktime(_time.strptime(start, '%d-%m-%Y')))
             end = int(_time.mktime(_time.strptime(end, '%d-%m-%Y')))
@@ -70,3 +71,4 @@ class YahooFinance:
 
     def to_csv(self, file_name):
         self.result.to_csv(file_name)
+
