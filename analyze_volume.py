@@ -25,5 +25,6 @@ class Analyzer(object):
         pass
         
 
-tata_power = YahooFinance('TATAPOWER.NS', result_range='1d', interval='15m', dropna='True').result
-print(tata_power['Volume'].mean())
+tata_power = YahooFinance('CONCOR.NS', result_range='5d', interval='1d', dropna='True').result
+print(tata_power)
+

@@ -1,8 +1,9 @@
-import nsepy
-from datetime import date
+#Token price scraping
 
-
-data = nsepy.get_history(symbol='SBIN',start=date(2021,5,1), end=date(2021,5,20),series='')
-
-nsepy.get_expiry_date
-print(data)
+def obtain_price():
+    ssl._create_default_https_context = ssl._create_unverified_context
+    url = ''
+    data = urllib.request.urlopen(url).read()
+    jsonn = json.loads(data)
+    price_token = jsonn[-1][1]
+    return price_token

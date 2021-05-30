@@ -56,6 +56,7 @@ class YahooFinance:
         highs = data['chart']['result'][0]['indicators']['quote'][0]['high']
         highs = self._round_of_list(highs)
         df_dict = {'Open': opens, 'High': highs, 'Low': lows, 'Close': closes, 'Volume': volumes}
+    
         df = pd.DataFrame(df_dict, index=timestamps)
         df.index = pd.to_datetime(df.index)
         return df
