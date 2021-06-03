@@ -1,2 +1,2 @@
-# Stockdata-prediction-with-nlp-and-neural-networks
-The project deals with the prediction of a stock price with the help of the  nlp and neural networks
+#Stock Data gathering and  analysis 
+The project deals with the collecting of market movers with the pyhton  scripts
